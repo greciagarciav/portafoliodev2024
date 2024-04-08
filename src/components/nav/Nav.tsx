@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { TabsMainContainer, TabsListContainer, TabsListEventContainer, TabsListTab, TabsListPanelsContainer, TabsPanelContent  } from "./Nav.styled.tsx";
+import { HomePortafolio  } from '../home/Home.tsx'
+
 
 const PortafolioTabs = () => {
 
@@ -23,7 +25,9 @@ const PortafolioTabs = () => {
                     <TabsListTab label="Contact" value="7" />
                     </TabsListEventContainer>
                 </TabsListContainer>
-                <TabsPanelContent value="1">Home</TabsPanelContent>
+                <TabsPanelContent value="1">
+                    <HomePortafolio></HomePortafolio>
+                </TabsPanelContent>
                 <TabsPanelContent value="2">About</TabsPanelContent>
                 <TabsPanelContent value="3">Projects</TabsPanelContent>
                 <TabsPanelContent value="4">Collabs</TabsPanelContent>
