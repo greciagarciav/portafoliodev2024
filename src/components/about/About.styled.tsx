@@ -8,7 +8,10 @@ export const AboutContainer = styled(Box)(() => ({
 
 export const FirstContainer = styled(Box)(() => ({
     width: '100%',
-    textAlign: "center"
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center", 
+    flexDirection: "column" as const,
 }))
 
 export const SecondContainer = styled(Box)(() => ({
