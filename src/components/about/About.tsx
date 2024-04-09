@@ -19,7 +19,7 @@ const AboutPortafolio = () => {
                     <ProjectsButton variant="contained">CONTACT</ProjectsButton>
                 </SideContainer>
                 <SideContainer>
-                    <Title>Skills</Title>
+                    <Title>Hard Skills</Title>
                     <ProjectsButton variant="contained" disabled>
                         HTML
                     </ProjectsButton>
@@ -45,7 +45,30 @@ const AboutPortafolio = () => {
                         GITHUB
                     </ProjectsButton>
                     <ProjectsButton variant="contained" disabled>
-                        GITLAB
+                        SCRUM
+                    </ProjectsButton>
+
+                    <Title>Soft Skills</Title>
+                    <ProjectsButton variant="contained" disabled>
+                        Problem Solving
+                    </ProjectsButton>
+                    <ProjectsButton variant="contained" disabled>
+                        Attention to details
+                    </ProjectsButton>
+                    <ProjectsButton variant="contained" disabled>
+                        Flexibility
+                    </ProjectsButton>
+                    <ProjectsButton variant="contained" disabled>
+                        Helpful
+                    </ProjectsButton>
+                    <ProjectsButton variant="contained" disabled>
+                        Team Work
+                    </ProjectsButton>
+                    <ProjectsButton variant="contained" disabled>
+                        Communicative
+                    </ProjectsButton>
+                    <ProjectsButton variant="contained" disabled>
+                        Patience
                     </ProjectsButton>
                 </SideContainer>
             </SecondContainer>
