@@ -3,7 +3,7 @@ import { TabsMainContainer, TabsListContainer, TabsListEventContainer, TabsListT
 import { HomePortafolio  } from '../home/Home.tsx'
 import { AboutPortafolio  } from '../about/About.tsx'
 import { ProjectsPortafolio  } from '../projects/Projects.tsx'
-
+import { CollabsPortafolio  } from '../collabs/Collabs.tsx'
 
 const PortafolioTabs = () => {
 
@@ -36,7 +36,9 @@ const PortafolioTabs = () => {
                 <TabsPanelContent value="3">
                     <ProjectsPortafolio></ProjectsPortafolio>
                 </TabsPanelContent>
-                <TabsPanelContent value="4">Collabs</TabsPanelContent>
+                <TabsPanelContent value="4">
+                    <CollabsPortafolio></CollabsPortafolio>
+                </TabsPanelContent>
                 <TabsPanelContent value="5">Testimonials</TabsPanelContent>
                 <TabsPanelContent value="6">Experience</TabsPanelContent>
                 <TabsPanelContent value="7">Contact</TabsPanelContent>
