@@ -2,6 +2,7 @@ import * as React from 'react';
 import { TabsMainContainer, TabsListContainer, TabsListEventContainer, TabsListTab, TabsListPanelsContainer, TabsPanelContent  } from "./Nav.styled.tsx";
 import { HomePortafolio  } from '../home/Home.tsx'
 import { AboutPortafolio  } from '../about/About.tsx'
+import { ProjectsPortafolio  } from '../projects/Projects.tsx'
 
 
 const PortafolioTabs = () => {
@@ -32,7 +33,9 @@ const PortafolioTabs = () => {
                 <TabsPanelContent value="2">
                     <AboutPortafolio></AboutPortafolio>
                 </TabsPanelContent>
-                <TabsPanelContent value="3">Projects</TabsPanelContent>
+                <TabsPanelContent value="3">
+                    <ProjectsPortafolio></ProjectsPortafolio>
+                </TabsPanelContent>
                 <TabsPanelContent value="4">Collabs</TabsPanelContent>
                 <TabsPanelContent value="5">Testimonials</TabsPanelContent>
                 <TabsPanelContent value="6">Experience</TabsPanelContent>
