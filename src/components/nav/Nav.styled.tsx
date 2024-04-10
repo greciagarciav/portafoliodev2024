@@ -10,11 +10,13 @@ export const TabsMainContainer = styled(Box)(()=> ({
 
  export const TabsListContainer = styled(Box)(()=> ({ 
     borderBottom: 1, 
-    borderColor: 'divider'
+    borderColor: 'divider',
+    display: "flex",
+    justifyContent: "end"
  }))
 
  export const TabsListEventContainer = styled(TabList)(()=> ({ 
-    background: colors.white, 
+    background: colors.white,
  }))
 
  export const TabsListTab = styled(Tab)(()=> ({ 

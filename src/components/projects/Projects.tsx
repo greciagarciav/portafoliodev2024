@@ -17,9 +17,6 @@ const ProjectsPortafolio = () => {
                 <CardProject></CardProject> 
                 <CardProject></CardProject> 
                 <CardProject></CardProject> 
-                <CardProject></CardProject> 
-                <CardProject></CardProject> 
-                <CardProject></CardProject> 
             </ProjectsCardsContainer>
             
                    

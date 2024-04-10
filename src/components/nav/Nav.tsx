@@ -18,13 +18,13 @@ const PortafolioTabs = () => {
             <TabsListPanelsContainer value={value}>
                 <TabsListContainer>
                     <TabsListEventContainer onChange={handleChange} aria-label="Tabs for portafolio">
-                    <TabsListTab label="Home" value="1" />
-                    <TabsListTab label="About" value="2" />
-                    <TabsListTab label="Projects" value="3" />
-                    <TabsListTab label="Collabs" value="4" />
-                    <TabsListTab label="Testimonials" value="5" />
-                    <TabsListTab label="Experience" value="6" />
-                    <TabsListTab label="Contact" value="7" />
+                        <TabsListTab label="Home" value="1" />
+                        <TabsListTab label="About" value="2" />
+                        <TabsListTab label="Projects" value="3" />
+                        <TabsListTab label="Collabs" value="4" />
+                        <TabsListTab label="Testimonials" value="5" />
+                        <TabsListTab label="Experience" value="6" />
+                        <TabsListTab label="Contact" value="7" />
                     </TabsListEventContainer>
                 </TabsListContainer>
                 <TabsPanelContent value="1">
