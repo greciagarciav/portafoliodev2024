@@ -11,8 +11,7 @@ export const CollabsContainer = styled(Box)(() => ({
 }))
 
 export const CollabsTypography = styled(Typography)(() => ({
-    fontFamily: 'Roboto',
-    fontStyle: 'normal',
+    fontFamily: "Source Sans Pro",
     fontWeight: '400',
     fontSize: '2rem',
     color: colors.black,

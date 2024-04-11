@@ -10,8 +10,7 @@ export const ProjectsContainer = styled(Box)(() => ({
 }))
 
 export const ProjectsTypography = styled(Typography)(() => ({
-    fontFamily: 'Roboto',
-    fontStyle: 'normal',
+    fontFamily: "Source Sans Pro",
 }))
 
 export const ProjectsCardsContainer = styled(Box)(() => ({

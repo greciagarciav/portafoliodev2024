@@ -19,8 +19,7 @@ export const ProjectsCardMedia = styled.img(() => ({
 }))
 
 export const ProjectsCardTypography = styled(Typography)(() => ({    
-    fontFamily: 'Roboto',
-    fontStyle: 'normal',
+    fontFamily: "Source Sans Pro",
 }))
 
 export const ProjectsCardDialog = styled(Dialog)(() => ({
@@ -33,16 +32,20 @@ export const ProjectsCardDialogContent = styled(DialogContent)(() => ({
 
 export const ProjectsCardDialogTitle = styled(DialogTitle)(() => ({
     width: '100%',
+    fontFamily: "Source Sans Pro",
 }))
 
 export const ProjectsCardDialogContentText = styled(DialogContentText)(() => ({
     width: '100%',
+    fontFamily: "Source Sans Pro",
 }))
 
 export const ProjectsCardDialogActions = styled(DialogActions)(() => ({
     width: '100%',
+    fontFamily: "Source Sans Pro",
 }))
 
 export const ProjectsCardDialogButton = styled(Button)(() => ({
     width: '100%',
+    fontFamily: "Source Sans Pro",
 }))

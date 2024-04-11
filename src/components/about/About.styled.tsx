@@ -24,8 +24,7 @@ export const SideContainer = styled(Box)(() => ({
 }))
 
 export const Title = styled(Typography)(() => ({
-    fontFamily: 'Roboto',
-    fontStyle: 'normal',
+    fontFamily: "Source Sans Pro",
     fontWeight: '400',
     fontSize: '56px',
     color: colors.black,
@@ -34,8 +33,7 @@ export const Title = styled(Typography)(() => ({
 }))
 
 export const Body = styled(Typography)(() => ({
-    fontFamily: 'Roboto',
-    fontStyle: 'normal',
+    fontFamily: "Source Sans Pro",
     fontWeight: '400',
     fontSize: '16px',
     color: colors.black,
@@ -44,11 +42,10 @@ export const Body = styled(Typography)(() => ({
 }))
 
 export const ProjectsButton = styled(Button)(() => ({
-    fontFamily: 'Roboto',
-    fontStyle: 'normal',
-    fontWeight: '400',
+    fontFamily: "Source Sans Pro",
+    fontWeight: 'bold',
     fontSize: '16px',
-    color: colors.black,
+    color: colors.white,
     lineHeight: '18px',
     padding: '20px 20px',
     margin: "5px"

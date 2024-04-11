@@ -8,34 +8,31 @@ export const HomeContainer = styled(Box)(() => ({
     justifyContent: "center",
     alignItems: "center", 
     flexDirection: "column" as const,
+    textAlign: "center" as const,
+    maxWidth: "90rem",
 }))
 
 export const Title = styled(Typography)(() => ({
-    fontFamily: 'Roboto',
-    fontStyle: 'normal',
-    fontWeight: '400',
-    fontSize: '56px',
+    fontFamily: "Source Sans Pro",
+    fontWeight: "bold",
+    fontSize: '4rem',
     color: colors.black,
-    lineHeight: '56px',
-    padding: '20px 20px'
+    letterSpacing: "3px",
+    margin: "50px 0px"  
 }))
 
 export const Body = styled(Typography)(() => ({
-    fontFamily: 'Roboto',
-    fontStyle: 'normal',
-    fontWeight: '400',
-    fontSize: '16px',
+    fontFamily: "Source Sans Pro",
+    fontSize: '2.2rem',
     color: colors.black,
-    lineHeight: '18px',
-    padding: '20px 20px'
+    lineHeight: '1.6',
+    margin: "30px 50px 0px"
 }))
 
 export const ProjectsButton = styled(Button)(() => ({
-    fontFamily: 'Roboto',
-    fontStyle: 'normal',
-    fontWeight: '400',
-    fontSize: '16px',
-    color: colors.black,
-    lineHeight: '18px',
-    padding: '20px 20px'
+    fontFamily: "Source Sans Pro",
+    marginTop: "50px",
+    padding: "15px 80px",
+    fontSize: "1rem",
+    fontWeight: "bold"
 }))

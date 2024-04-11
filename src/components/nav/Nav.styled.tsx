@@ -20,6 +20,7 @@ export const TabsMainContainer = styled(Box)(()=> ({
  }))
 
  export const TabsListTab = styled(Tab)(()=> ({ 
+    fontFamily: "Source Sans Pro",
     background: colors.white, 
  }))
 
