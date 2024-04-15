@@ -25,11 +25,10 @@ export const SideContainer = styled(Box)(() => ({
 
 export const Title = styled(Typography)(() => ({
     fontFamily: "Source Sans Pro",
-    fontWeight: '400',
-    fontSize: '56px',
+    fontWeight: 'bold',
     color: colors.black,
     lineHeight: '56px',
-    padding: '20px 20px'
+    padding: '0px 20px 0px'
 }))
 
 export const Body = styled(Typography)(() => ({
@@ -37,8 +36,18 @@ export const Body = styled(Typography)(() => ({
     fontWeight: '400',
     fontSize: '16px',
     color: colors.black,
-    lineHeight: '18px',
+    lineHeight: '23px',
     padding: '20px 20px'
+}))
+
+export const SkillsButton = styled(Button)(() => ({
+    fontFamily: "Source Sans Pro",
+    fontWeight: 'bold',
+    fontSize: '16px',
+    color: colors.white,
+    lineHeight: '18px',
+    margin: "5px",
+    padding: '15px 15px'
 }))
 
 export const ProjectsButton = styled(Button)(() => ({
@@ -47,6 +56,6 @@ export const ProjectsButton = styled(Button)(() => ({
     fontSize: '16px',
     color: colors.white,
     lineHeight: '18px',
-    padding: '20px 20px',
-    margin: "5px"
+    margin: "5px",
+    padding: "15px 80px",
 }))
