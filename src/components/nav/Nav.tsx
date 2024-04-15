@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { TabsMainContainer, TabsListContainer, TabsListEventContainer, TabsListTab, TabsListPanelsContainer, TabsPanelContent  } from "./Nav.styled.tsx";
+import { TabsMainContainer, TabsListContainer, TabsListEventContainer, TabsListTab, TabsListPanelsContainer, TabsPanelContent, LogoNameContainer, LogoName, LogoContainer, Logo  } from "./Nav.styled.tsx";
 import { HomePortafolio  } from '../home/Home.tsx'
 import { AboutPortafolio  } from '../about/About.tsx'
 import { ProjectsPortafolio  } from '../projects/Projects.tsx'
@@ -15,8 +15,16 @@ const PortafolioTabs = () => {
 
     return (
         <TabsMainContainer>
+            
             <TabsListPanelsContainer value={value}>
+            
                 <TabsListContainer>
+                    <LogoNameContainer>
+                        <LogoContainer>
+                            <Logo src='https://media.licdn.com/dms/image/D5603AQEjqzSkpXzWYQ/profile-displayphoto-shrink_800_800/0/1712675994978?e=1718841600&v=beta&t=sdmMdvAoEx6-YcLaQj-wpLg-5bvDdZiqWjegCwAg_fk'/>
+                        </LogoContainer> 
+                        <LogoName>GRECIA GARCIA</LogoName>                               
+                    </LogoNameContainer>
                     <TabsListEventContainer onChange={handleChange} aria-label="Tabs for portafolio">
                         <TabsListTab label="Home" value="1" />
                         <TabsListTab label="About" value="2" />
