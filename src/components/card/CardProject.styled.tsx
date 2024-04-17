@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Button, Card, CardActionArea, CardContent, Typography,  Dialog, DialogContent, DialogTitle, DialogContentText, DialogActions } from "@mui/material";
 
 export const ProjectsCard = styled(Card)(() => ({
-    width: '200px',
+    width: '345px',
     margin: "5px"
 }))
 

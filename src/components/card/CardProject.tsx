@@ -23,13 +23,10 @@ const CardProject = () => {
             <ProjectsCardActionArea>
                 <ProjectsCardMedia src="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>         
                 <ProjectsCardContent>
-                    <ProjectsCardTypography gutterBottom variant="h5">
+                    <ProjectsCardTypography gutterBottom fontSize={"20px"}>
                         Lizard
                     </ProjectsCardTypography>
-                    <ProjectsCardTypography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                        species, ranging across all continents except Antarctica
-                    </ProjectsCardTypography>
+                    
                 </ProjectsCardContent>
             </ProjectsCardActionArea>
           </ProjectsCard>

@@ -8,8 +8,8 @@ const ProjectsPortafolio = () => {
 
     return (
         <ProjectsContainer>
-            <ProjectsTypography fontSize={"56px"}>PROJECTS</ProjectsTypography>
-            <ProjectsTypography fontSize={"16px"}>Here you will find some of the personal and clients projects that I created with each project containing its own case study</ProjectsTypography>
+            <ProjectsTypography fontSize={"46px"} fontWeight={"bold"}>PROJECTS</ProjectsTypography>
+            <ProjectsTypography fontSize={"16px"} paddingBottom={"15px"}>Here you will find some of the personal and clients projects that I created with each project containing its own case study</ProjectsTypography>
             <ProjectsCardsContainer>
                 <CardProject></CardProject>
                 <CardProject></CardProject> 
