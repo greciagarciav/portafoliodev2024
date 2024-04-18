@@ -4,6 +4,9 @@ import { HomePortafolio  } from '../home/Home.tsx'
 import { AboutPortafolio  } from '../about/About.tsx'
 import { ProjectsPortafolio  } from '../projects/Projects.tsx'
 import { CollabsPortafolio  } from '../collabs/Collabs.tsx'
+import { TestimonialsPortafolio  } from '../testimonials/Testimonials.tsx'
+import { ExperiencePortafolio  } from '../experience/Expererience.tsx'
+import { ContactPortafolio  } from '../contact/Contact.tsx'
 
 const PortafolioTabs = () => {
 
@@ -47,9 +50,15 @@ const PortafolioTabs = () => {
                 <TabsPanelContent value="4">
                     <CollabsPortafolio></CollabsPortafolio>
                 </TabsPanelContent>
-                <TabsPanelContent value="5">Testimonials</TabsPanelContent>
-                <TabsPanelContent value="6">Experience</TabsPanelContent>
-                <TabsPanelContent value="7">Contact</TabsPanelContent>
+                <TabsPanelContent value="5">
+                    <TestimonialsPortafolio></TestimonialsPortafolio>
+                </TabsPanelContent>
+                <TabsPanelContent value="6">
+                    <ExperiencePortafolio></ExperiencePortafolio>
+                </TabsPanelContent>
+                <TabsPanelContent value="7">
+                    <ContactPortafolio></ContactPortafolio>
+                </TabsPanelContent>
             </TabsListPanelsContainer>
         </TabsMainContainer>
     );

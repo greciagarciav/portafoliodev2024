@@ -4,7 +4,8 @@ import { CollabsContainer, CollabsTypography, CollabsImagesContainer, CollabsIma
 const CollabsPortafolio = () => { 
     return(
         <CollabsContainer>
-            <CollabsTypography>I'm proud to have collaborated with some awesome companies:</CollabsTypography>
+            <CollabsTypography fontSize={"46px"} fontWeight={"bold"}>COLLABORATIONS</CollabsTypography>
+            <CollabsTypography fontSize={"16px"} padding={"20px"}>I'm proud to have collaborated with some awesome companies.</CollabsTypography>
             <CollabsImagesContainer>
                 <CollabsImage src="https://mattfarley.ca/img/logos/briteweb.svg"/>
                 <CollabsImage src="https://mattfarley.ca/img/logos/domain7.svg"/>

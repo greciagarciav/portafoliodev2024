@@ -12,11 +12,7 @@ export const CollabsContainer = styled(Box)(() => ({
 
 export const CollabsTypography = styled(Typography)(() => ({
     fontFamily: "Source Sans Pro",
-    fontWeight: '400',
-    fontSize: '2rem',
-    color: colors.black,
-    lineHeight: '56px',
-    padding: '20px 20px',
+    color: colors.black
 }))
 
 export const CollabsImagesContainer = styled(Box)(() => ({
