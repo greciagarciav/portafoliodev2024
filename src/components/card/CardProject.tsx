@@ -2,8 +2,14 @@ import  React from 'react';
 import { ProjectsCard, ProjectsCardActionArea, ProjectsCardContent, ProjectsCardMedia, ProjectsCardTypography,  ProjectsCardDialog, ProjectsCardDialogContent, ProjectsCardDialogTitle, ProjectsCardDialogContentText, ProjectsCardDialogActions, ProjectsCardDialogButton } from './CardProject.styled.tsx';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import { Project } from "../../models/interfaces/project.interface"
 
-const CardProject = () => {
+
+type CardProjectProps = {
+  project: Project;
+};
+
+const CardProject: React.FC<CardProjectProps> = ({ project }) => {
 
     const [open, setOpen] = React.useState(false);
     const theme = useTheme();
@@ -21,10 +27,10 @@ const CardProject = () => {
     <React.Fragment>
         <ProjectsCard variant="outlined" onClick={handleClickOpen}>
             <ProjectsCardActionArea>
-                <ProjectsCardMedia src="https://mui.com/static/images/cards/contemplative-reptile.jpg"/>         
+                <ProjectsCardMedia src={project.imageUrl}/>         
                 <ProjectsCardContent>
                     <ProjectsCardTypography gutterBottom fontSize={"20px"}>
-                        Lizard
+                    {project.name}
                     </ProjectsCardTypography>
                     
                 </ProjectsCardContent>
@@ -37,17 +43,19 @@ const CardProject = () => {
             aria-labelledby="responsive-dialog-title"
           >
             <ProjectsCardDialogTitle id="responsive-dialog-title">
-              {"Use Google's location service?"}
+              {project.name}
             </ProjectsCardDialogTitle>
             <ProjectsCardDialogContent>
               <ProjectsCardDialogContentText>
-                Let Google help apps determine location. This means sending anonymous
-                location data to Google, even when no apps are running.
+                {project.description}
               </ProjectsCardDialogContentText>
             </ProjectsCardDialogContent>
             <ProjectsCardDialogActions>
-              <ProjectsCardDialogButton autoFocus onClick={handleClose}>
-                Disagree
+              <ProjectsCardDialogButton autoFocus href={project.repoUrl}>
+                Documentation
+              </ProjectsCardDialogButton>
+              <ProjectsCardDialogButton autoFocus href={project.demoUrl}>
+                Demo
               </ProjectsCardDialogButton>
             </ProjectsCardDialogActions>
           </ProjectsCardDialog>

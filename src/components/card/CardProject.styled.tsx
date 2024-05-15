@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Button, Card, CardActionArea, CardContent, Typography,  Dialog, DialogContent, DialogTitle, DialogContentText, DialogActions } from "@mui/material";
 
 export const ProjectsCard = styled(Card)(() => ({
-    width: '345px',
+    width: '95%',
     margin: "5px"
 }))
 
@@ -27,25 +27,21 @@ export const ProjectsCardDialog = styled(Dialog)(() => ({
 }))
 
 export const ProjectsCardDialogContent = styled(DialogContent)(() => ({
-    width: '100%',
+    // width: '100%',
 }))
 
 export const ProjectsCardDialogTitle = styled(DialogTitle)(() => ({
-    width: '100%',
     fontFamily: "Source Sans Pro",
 }))
 
 export const ProjectsCardDialogContentText = styled(DialogContentText)(() => ({
-    width: '100%',
     fontFamily: "Source Sans Pro",
 }))
 
 export const ProjectsCardDialogActions = styled(DialogActions)(() => ({
-    width: '100%',
     fontFamily: "Source Sans Pro",
 }))
 
 export const ProjectsCardDialogButton = styled(Button)(() => ({
-    width: '100%',
     fontFamily: "Source Sans Pro",
 }))

@@ -28,7 +28,7 @@ export const Title = styled(Typography)(() => ({
     fontWeight: 'bold',
     color: colors.black,
     lineHeight: '56px',
-    padding: '0px 20px 0px'
+    paddingLeft: '20px'
 }))
 
 export const Body = styled(Typography)(() => ({
@@ -43,7 +43,7 @@ export const Body = styled(Typography)(() => ({
 export const SkillsButton = styled(Button)(() => ({
     fontFamily: "Source Sans Pro",
     fontWeight: 'bold',
-    fontSize: '16px',
+    fontSize: '13.5px',
     color: colors.white,
     lineHeight: '18px',
     margin: "5px",

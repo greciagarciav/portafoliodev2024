@@ -18,12 +18,12 @@ export const CollabsTypography = styled(Typography)(() => ({
 export const CollabsImagesContainer = styled(Box)(() => ({
     width: '100%',
     display: "grid",
-    gridTemplateColumns: "auto auto auto auto",
+    gridTemplateColumns: "auto auto auto",
     justifyContent: "center",
     paddingTop: "25px"
 }))
 
 export const CollabsImage = styled.img(() => ({
     width: '200px',
-    margin: "10px"
+    margin: "30px"
 }))

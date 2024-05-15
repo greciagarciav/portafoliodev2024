@@ -2,13 +2,18 @@ import * as React from 'react';
 import { TestimonialsContainer, TestimonialsTypography } from './Testimonials.styled.tsx';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import Divider from '@mui/material/Divider';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
+import { Testimonial } from "../../models/interfaces/testimonial.interface"
+import { testimonials } from '../../data/testimonials.js';
 
-const TestimonialsPortafolio = () => {   
+type TestimonialsListProps = {
+    testimonials: Testimonial[]
+}
+
+const TestimonialsPortafolio: React.FC<TestimonialsListProps> = () => {   
 
     return (
         <TestimonialsContainer>
@@ -16,71 +21,31 @@ const TestimonialsPortafolio = () => {
             <TestimonialsTypography fontSize={"16px"} paddingBottom={"15px"}>People I've worked with have said some nice things...</TestimonialsTypography>
 
             <List sx={{ width: '100%', maxWidth: "55%", bgcolor: 'background.paper' }}>
-                <ListItem alignItems="flex-start" sx={{ padding: "20px 20px" }}>
-                    <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="https://anniebombanie.com/assets/profile-dylan.jpg" sx={{ width: 100, height: 100, marginRight: "15px" }} />
-                    </ListItemAvatar>
-                    <ListItemText 
-                    primary="Dylan McGuinty Jr.,"
-                    secondary={
-                        <React.Fragment>
-                        <Typography
-                            sx={{ display: 'inline' }}
-                            component="span"
-                            variant="body2"
-                            color="text.primary"
-                        >
-                            Lawyer, McGuin
-                        </Typography>
-                        {" — We hired Annie to rework the content and design of our website. She has been terrific- collaborative, diligent, honest and professional, offering solutions we had not thought about. We have found that she delivers efficiently and in a timely manner. Her work on our website successfully communicates to prospective clients the kind of people and law firm that we are and has brought innumerable clients to our firm through a streamlined and attractive website. I would recommend Annie in a heartbeat."}
-                        </React.Fragment>
-                    }
-                    />
-                </ListItem>
-                <Divider variant="inset" component="li" sx={{ marginLeft: "0px"}} />
-                <ListItem alignItems="flex-start" sx={{ padding: "20px 20px" }}>
-                    <ListItemText 
-                    primary="Dylan McGuinty Jr.,"
-                    secondary={
-                        <React.Fragment>
-                        <Typography
-                            sx={{ display: 'inline' }}
-                            component="span"
-                            variant="body2"
-                            color="text.primary"
-                        >
-                            Lawyer, McGuin
-                        </Typography>
-                        {" — We hired Annie to rework the content and design of our website. She has been terrific- collaborative, diligent, honest and professional, offering solutions we had not thought about. We have found that she delivers efficiently and in a timely manner. Her work on our website successfully communicates to prospective clients the kind of people and law firm that we are and has brought innumerable clients to our firm through a streamlined and attractive website. I would recommend Annie in a heartbeat."}
-                        </React.Fragment>
-                    }
-                    />
-                    <ListItemAvatar>
-                        <Avatar alt="Remy Sharp" src="https://anniebombanie.com/assets/profile-dylan.jpg" sx={{ width: 100, height: 100, marginLeft: "15px" }} />
-                    </ListItemAvatar>
-                </ListItem>
-                <Divider variant="inset" component="li" sx={{ marginLeft: "0px"}} />
-                <ListItem alignItems="flex-start" sx={{ padding: "20px 20px" }}>
-                    <ListItemAvatar>
-                    <Avatar alt="Remy Sharp" src="https://anniebombanie.com/assets/profile-dylan.jpg" sx={{ width: 100, height: 100, marginRight: "15px" }} />
-                    </ListItemAvatar>
-                    <ListItemText 
-                    primary="Dylan McGuinty Jr.,"
-                    secondary={
-                        <React.Fragment>
-                        <Typography
-                            sx={{ display: 'inline' }}
-                            component="span"
-                            variant="body2"
-                            color="text.primary"
-                        >
-                            Lawyer, McGuin
-                        </Typography>
-                        {" — We hired Annie to rework the content and design of our website. She has been terrific- collaborative, diligent, honest and professional, offering solutions we had not thought about. We have found that she delivers efficiently and in a timely manner. Her work on our website successfully communicates to prospective clients the kind of people and law firm that we are and has brought innumerable clients to our firm through a streamlined and attractive website. I would recommend Annie in a heartbeat."}
-                        </React.Fragment>
-                    }
-                    />
-                </ListItem>
+                {testimonials.map((testimonial, index) => (
+                    
+                        <ListItem key={testimonial.id} sx={{ display: 'flex', flexDirection: index % 2 === 0 ? 'row' : 'row-reverse', alignItems: 'center' }}>
+                            <ListItemAvatar>
+                                <Avatar alt={testimonial.name} src={testimonial.imageUrl} sx={{ width: 100, height: 100, marginRight: "15px" }} />
+                            </ListItemAvatar>
+                            <ListItemText 
+                                primary={testimonial.name}
+                                secondary={
+                                    <React.Fragment>
+                                    <Typography
+                                        sx={{ display: 'inline' }}
+                                        component="span"
+                                        variant="body2"
+                                        color="text.primary"
+                                    >
+                                        {testimonial.role}
+                                    </Typography>
+                                    {testimonial.description}
+                                    </React.Fragment>
+                                }
+                            />
+                            
+                        </ListItem>        
+                ))}
             </List>
 
         </TestimonialsContainer>

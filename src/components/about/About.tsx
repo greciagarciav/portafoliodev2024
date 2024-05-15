@@ -13,42 +13,51 @@ const AboutPortafolio = () => {
             <SecondContainer>
                 <SideContainer>
                     <Title fontSize={"34px"}>Get to know me!</Title>
-                    <Body>I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.
-                            I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin and Instagram where I post useful content related to Web Development and Programming
+                    <Body>I'm a rontend developer with 4+ years of experience carrying out challenging projects under SCRUM, making use of Angular,
+                            React.js/Redux, Node.js, strong proficiency in HTML5, CSS3, SASS and Javascript, JSON, Bootstrap, Git, Github, Gitlab
+                            and APIs RESTful. I'm a committed person with strong communication and collaboration skills, creative, problem-solving,
+                            results-oriented, and strong visual acumen. I have the willingness and disposition to learn new technologies.
                             I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</Body>
                     <ProjectsButton variant="contained">CONTACT</ProjectsButton>
                 </SideContainer>
                 <SideContainer>
-                    <Title fontSize={"34px"}>Hard Skills</Title>
+                    <Title fontSize={"34px"}>Tech Skills</Title>
                     <SkillsButton variant="contained" disabled>
                         HTML
                     </SkillsButton>
                     <SkillsButton variant="contained" disabled>
-                        CSS
+                        CSS & SASS
                     </SkillsButton>
                     <SkillsButton variant="contained" disabled>
                         Javascript
                     </SkillsButton>
                     <SkillsButton variant="contained" disabled>
-                        JSON
-                    </SkillsButton>
-                    <SkillsButton variant="contained" disabled>
                         React
                     </SkillsButton>
                     <SkillsButton variant="contained" disabled>
-                        SASS
+                        Angular
                     </SkillsButton>
+                    <SkillsButton variant="contained" disabled>
+                        WCAG
+                    </SkillsButton>
+                    <SkillsButton variant="contained" disabled>
+                        TEST
+                    </SkillsButton>
+                    <SkillsButton variant="contained" disabled>
+                        Cross-Browser Compatibility
+                    </SkillsButton>                                     
+                    <SkillsButton variant="contained" disabled>
+                        Responsive Design
+                    </SkillsButton>
+                    <SkillsButton variant="contained" disabled>
+                        RESTful APIs
+                    </SkillsButton>                    
+                    
                     <SkillsButton variant="contained" disabled>
                         GIT
                     </SkillsButton>
-                    <SkillsButton variant="contained" disabled>
-                        GITHUB
-                    </SkillsButton>
-                    <SkillsButton variant="contained" disabled>
-                        SCRUM
-                    </SkillsButton>
 
-                    <Title fontSize={"34px"}>Soft Skills</Title>
+                    <Title fontSize={"34px"} paddingTop={"15px"}>Soft Skills</Title>
                     <SkillsButton variant="contained" disabled>
                         Problem Solving
                     </SkillsButton>
@@ -56,20 +65,28 @@ const AboutPortafolio = () => {
                         Attention to details
                     </SkillsButton>
                     <SkillsButton variant="contained" disabled>
-                        Flexibility
+                        Time management
                     </SkillsButton>
                     <SkillsButton variant="contained" disabled>
-                        Helpful
-                    </SkillsButton>
-                    <SkillsButton variant="contained" disabled>
-                        Team Work
-                    </SkillsButton>
-                    <SkillsButton variant="contained" disabled>
-                        Communicative
+                        Adaptability
                     </SkillsButton>
                     <SkillsButton variant="contained" disabled>
                         Patience
                     </SkillsButton>
+                    <SkillsButton variant="contained" disabled>
+                        Collaboration
+                    </SkillsButton>
+                    <SkillsButton variant="contained" disabled>
+                        Customer focus
+                    </SkillsButton>
+                    <SkillsButton variant="contained" disabled>
+                        Communication
+                    </SkillsButton>
+                    <SkillsButton variant="contained" disabled>
+                        Empathy
+                    </SkillsButton>
+                    
+                    
                 </SideContainer>
             </SecondContainer>
           
