@@ -7,13 +7,12 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import { Testimonial } from "../../models/interfaces/testimonial.interface"
-import { testimonials } from '../../data/testimonials.js';
 
 type TestimonialsListProps = {
     testimonials: Testimonial[]
 }
 
-const TestimonialsPortafolio: React.FC<TestimonialsListProps> = () => {   
+const TestimonialsPortafolio: React.FC<TestimonialsListProps> = ({ testimonials }) => {   
 
     return (
         <TestimonialsContainer>

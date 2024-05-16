@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { ProjectsContainer, ProjectsCardsContainer, ProjectsTypography } from './Projects.styled.tsx';
-import { CardProject } from '../card/CardProject.tsx';
+import { CardProject } from '../../components/card/CardProject.tsx';
 import { Project } from "../../models/interfaces/project.interface"
-import { projects } from '../../data/projects.js';
+
 
 type ProjectsListProps = {
     projects: Project[]
 }
 
-const ProjectsPortafolio: React.FC<ProjectsListProps> = () => {  
+const ProjectsPortafolio: React.FC<ProjectsListProps> = ({ projects }) => {  
     
     return (
         <ProjectsContainer>

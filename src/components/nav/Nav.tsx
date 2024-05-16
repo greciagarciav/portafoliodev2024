@@ -1,12 +1,15 @@
 import * as React from 'react';
 import { TabsMainContainer, TabsListContainer, TabsListEventContainer, TabsListTab, TabsListPanelsContainer, TabsPanelContent, LogoNameContainer, LogoName, LogoContainer, Logo  } from "./Nav.styled.tsx";
-import { HomePortafolio  } from '../home/Home.tsx'
-import { AboutPortafolio  } from '../about/About.tsx'
-import { ProjectsPortafolio  } from '../projects/Projects.tsx'
-import { CollabsPortafolio  } from '../collabs/Collabs.tsx'
-import { TestimonialsPortafolio  } from '../testimonials/Testimonials.tsx'
-import { ExperiencePortafolio  } from '../experience/Expererience.tsx'
-import { ContactPortafolio  } from '../contact/Contact.tsx'
+import { HomePortafolio } from '../../pages/home/Home.tsx';
+import { AboutPortafolio  } from '../../pages/about/About.tsx'
+import { ProjectsPortafolio  } from '../../pages/projects/Projects.tsx'
+import { CollabsPortafolio  } from '../../pages/collabs/Collabs.tsx'
+import { TestimonialsPortafolio  } from '../../pages/testimonials/Testimonials.tsx'
+import { ExperiencePortafolio  } from '../../pages/experience/Expererience.tsx'
+import { ContactPortafolio  } from '../../pages/contact/Contact.tsx'
+import { projects } from '../../data/projects.js';
+import { testimonials } from '../../data/testimonials.js';
+import { experiences } from '../../data/experience.js';
 
 const PortafolioTabs = () => {
 
@@ -45,16 +48,16 @@ const PortafolioTabs = () => {
                     <AboutPortafolio></AboutPortafolio>
                 </TabsPanelContent>
                 <TabsPanelContent value="3">
-                    <ProjectsPortafolio></ProjectsPortafolio>
+                    <ProjectsPortafolio projects={projects}></ProjectsPortafolio>
                 </TabsPanelContent>
                 <TabsPanelContent value="4">
                     <CollabsPortafolio></CollabsPortafolio>
                 </TabsPanelContent>
                 <TabsPanelContent value="5">
-                    <TestimonialsPortafolio></TestimonialsPortafolio>
+                    <TestimonialsPortafolio testimonials={testimonials}></TestimonialsPortafolio>
                 </TabsPanelContent>
                 <TabsPanelContent value="6">
-                    <ExperiencePortafolio></ExperiencePortafolio>
+                    <ExperiencePortafolio experiences={experiences}></ExperiencePortafolio>
                 </TabsPanelContent>
                 <TabsPanelContent value="7">
                     <ContactPortafolio></ContactPortafolio>

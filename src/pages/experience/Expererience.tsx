@@ -2,14 +2,13 @@ import * as React from 'react';
 import { ExperienceContainer, ExperienceTypography } from './Experience.styled.tsx';
 import { SkillsButton } from "../about/About.styled.tsx"
 import { List, ListItem, ListItemText, Typography } from "@mui/material";
-import { Experience } from '../../models/interfaces/experience.interface';
-import { experiences } from '../../data/experience.js';
+import { Experience } from '../../models/interfaces/experience.interface.ts';
 
 type ExperienceListProps = {
     experiences: Experience[]
 }
 
-const ExperiencePortafolio: React.FC<ExperienceListProps> = () => {   
+const ExperiencePortafolio: React.FC<ExperienceListProps> = ({ experiences }) => {   
 
     return (
         <ExperienceContainer>
