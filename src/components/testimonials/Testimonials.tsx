@@ -23,29 +23,30 @@ const TestimonialsPortafolio: React.FC<TestimonialsListProps> = () => {
             <List sx={{ width: '100%', maxWidth: "55%", bgcolor: 'background.paper' }}>
                 {testimonials.map((testimonial, index) => (
                     
-                        <ListItem key={testimonial.id} sx={{ display: 'flex', flexDirection: index % 2 === 0 ? 'row' : 'row-reverse', alignItems: 'center' }}>
-                            <ListItemAvatar>
-                                <Avatar alt={testimonial.name} src={testimonial.imageUrl} sx={{ width: 100, height: 100, marginRight: "15px" }} />
-                            </ListItemAvatar>
-                            <ListItemText 
-                                primary={testimonial.name}
-                                secondary={
-                                    <React.Fragment>
-                                    <Typography
-                                        sx={{ display: 'inline' }}
-                                        component="span"
-                                        variant="body2"
-                                        color="text.primary"
-                                    >
-                                        {testimonial.role}
-                                    </Typography>
-                                    {testimonial.description}
-                                    </React.Fragment>
-                                }
-                            />
-                            
-                        </ListItem>        
+                    <ListItem key={testimonial.id} sx={{ display: 'flex', flexDirection: index % 2 === 0 ? 'row' : 'row-reverse', alignItems: 'center' }}>
+                        <ListItemAvatar>
+                            <Avatar alt={testimonial.name} src={testimonial.imageUrl} sx={{ width: 100, height: 100, marginRight: "15px" }} />
+                        </ListItemAvatar>
+                        <ListItemText 
+                            primary={testimonial.name}
+                            secondary={
+                                <React.Fragment>
+                                <Typography
+                                    sx={{ display: 'inline' }}
+                                    component="span"
+                                    variant="body2"
+                                    color="text.primary"
+                                >
+                                    {testimonial.role}
+                                </Typography>
+                                {testimonial.description}
+                                </React.Fragment>
+                            }
+                        />                            
+                    </ListItem> 
+                             
                 ))}
+                
             </List>
 
         </TestimonialsContainer>
