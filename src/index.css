@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.css-gb4akd-MuiButtonBase-root-MuiTab-root {
+  color: rgba(0, 0, 0, 0.6)!important;
+  opacity: 1!important;
+}

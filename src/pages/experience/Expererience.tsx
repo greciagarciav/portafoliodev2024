@@ -32,7 +32,7 @@ const ExperiencePortafolio: React.FC<ExperienceListProps> = ({ experiences }) =>
                                 
                             />
                             {experience.techStack.map(skill=> (
-                                <SkillsButton variant="contained" disabled>
+                                <SkillsButton key={experience.id + skill} variant="contained" disabled>
                                     {skill}
                                 </SkillsButton>
                             ))}

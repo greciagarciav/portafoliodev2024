@@ -4,6 +4,7 @@ import { colors } from "../../constants/colors.ts";
 
 export const AboutContainer = styled(Box)(() => ({
     width: '100%',
+    marginTop: '100px'
 }))
 
 export const FirstContainer = styled(Box)(() => ({

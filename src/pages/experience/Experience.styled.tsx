@@ -7,6 +7,7 @@ export const ExperienceContainer = styled(Box)(() => ({
     justifyContent: "center",
     alignItems: "center", 
     flexDirection: "column" as const,
+    marginTop: '100px'
 }))
 
 export const ExperienceTypography = styled(Typography)(() => ({

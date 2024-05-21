@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from "react-router-dom";
 import { Title, Body, AboutContainer, FirstContainer, SecondContainer, SideContainer, SkillsButton, ProjectsButton } from "./About.styled.tsx"
 
 const AboutPortafolio = () => {
@@ -18,7 +19,9 @@ const AboutPortafolio = () => {
                             and APIs RESTful. I'm a committed person with strong communication and collaboration skills, creative, problem-solving,
                             results-oriented, and strong visual acumen. I have the willingness and disposition to learn new technologies.
                             I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</Body>
-                    <ProjectsButton variant="contained">CONTACT</ProjectsButton>
+                            <Link to="/contact">
+                                <ProjectsButton variant="contained">CONTACT</ProjectsButton>
+                            </Link>                    
                 </SideContainer>
                 <SideContainer>
                     <Title fontSize={"34px"}>Tech Skills</Title>

@@ -10,6 +10,7 @@ export const HomeContainer = styled(Box)(() => ({
     flexDirection: "column" as const,
     textAlign: "center" as const,
     maxWidth: "90rem",
+    marginTop: '100px'
 }))
 
 export const Title = styled(Typography)(() => ({
