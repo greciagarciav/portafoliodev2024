@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ExperienceContainer, ExperienceTypography } from './Experience.styled.tsx';
 import { SkillsButton } from "../about/About.styled.tsx"
-import { List, ListItem, ListItemText, Typography } from "@mui/material";
+import { Box, List, ListItem, ListItemText, Typography } from "@mui/material";
 import { Experience } from '../../models/interfaces/experience.interface.ts';
 
 type ExperienceListProps = {
@@ -19,9 +19,9 @@ const ExperiencePortafolio: React.FC<ExperienceListProps> = ({ experiences }) =>
                 
                 {experiences.map(experience=> (
                     <ListItem key={experience.id} alignItems="flex-start" sx={{ width: '100%', padding: "20px 20px" }}>
-                        <Typography sx={{marginRight: "15px", width: '50%', marginTop: "7px" }}>{experience.date}</Typography>
+                        <Typography sx={{marginRight: "15px", width: '20%', marginTop: "7px" }}>{experience.date}</Typography>
                                         
-                        <div>
+                        <Box sx={{width: '80%'}}>
                             <ListItemText 
                                 primary={experience.role + " " + experience.company}
                                 secondary={
@@ -36,7 +36,7 @@ const ExperiencePortafolio: React.FC<ExperienceListProps> = ({ experiences }) =>
                                     {skill}
                                 </SkillsButton>
                             ))}
-                        </div>                  
+                        </Box>                  
 
                     </ListItem>
                 ))}                

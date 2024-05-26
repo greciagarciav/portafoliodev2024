@@ -22,7 +22,7 @@ const TestimonialsPortafolio: React.FC<TestimonialsListProps> = ({ testimonials 
             <List sx={{ width: '100%', maxWidth: "55%", bgcolor: 'background.paper' }}>
                 {testimonials.map((testimonial, index) => (
                     
-                    <ListItem key={testimonial.id} sx={{ display: 'flex', flexDirection: index % 2 === 0 ? 'row' : 'row-reverse', alignItems: 'center' }}>
+                    <ListItem key={testimonial.id} sx={{ display: 'flex', flexDirection: index % 2 === 0 ? 'row' : 'row-reverse', alignItems: 'center', paddingBottom: "50px" }}>
                         <ListItemAvatar>
                             <Avatar alt={testimonial.name} src={testimonial.imageUrl} sx={{ width: 100, height: 100, marginRight: "15px" }} />
                         </ListItemAvatar>
