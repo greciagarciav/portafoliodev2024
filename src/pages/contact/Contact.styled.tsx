@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Box, Typography } from "@mui/material";
 
 export const ContactContainer = styled(Box)(() => ({
-    width: '100%',
+    width: 'auto',
     display: "flex",
     justifyContent: "center",
     alignItems: "center", 
@@ -11,5 +11,5 @@ export const ContactContainer = styled(Box)(() => ({
 }))
 
 export const ContactTypography = styled(Typography)(() => ({
-    fontFamily: "Source Sans Pro",
+    fontFamily: "Source Sans Pro"
 }))

@@ -9,30 +9,30 @@ import TextField from '@mui/material/TextField';
 const ContactPortafolio = () => {   
 
     return (
-        <ContactContainer>
+        <ContactContainer sx={{textAlign: "center"}}>
             <ContactTypography fontSize={"46px"} fontWeight={"bold"}>CONTACT</ContactTypography>
             <ContactTypography fontSize={"16px"} paddingBottom={"15px"}>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</ContactTypography>
             <Box component="form"
                 sx={{
-                    '& .MuiTextField-root': { m: 1, width: '70ch' },
-                    display: "flex", flexDirection: "column"
+                    '& .MuiTextField-root': { m: 1 },
+                    display: "flex", flexDirection: "column", width: "100%", margin: "0px 10px"
                 }}
                 noValidate
                 autoComplete="off">
                    
-                    <TextField
+                    <TextField fullWidth
                         required
                         id="name"
                         label="Name"
                         
                     />
-                    <TextField
+                    <TextField fullWidth
                         required
                         id="email"
                         label="Email"
                         
                     />                                      
-                    <TextField
+                    <TextField fullWidth
                             required                           
                             id="message"
                             label="Message"

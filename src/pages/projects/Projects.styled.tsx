@@ -7,7 +7,7 @@ export const ProjectsContainer = styled(Box)(() => ({
     justifyContent: "center",
     alignItems: "center", 
     flexDirection: "column" as const,
-    marginTop: '100px'
+    margin: '100px 25px 0px'
 }))
 
 export const ProjectsTypography = styled(Typography)(() => ({

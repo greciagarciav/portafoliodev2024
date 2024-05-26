@@ -14,7 +14,7 @@ const AboutPortafolio = () => {
             <SecondContainer>
                 <SideContainer>
                     <Title fontSize={"34px"}>Get to know me!</Title>
-                    <Body>I'm a rontend developer with 4+ years of experience carrying out challenging projects under SCRUM, making use of Angular,
+                    <Body>I'm a frontend developer with 4+ years of experience carrying out challenging projects under SCRUM, making use of Angular,
                             React.js/Redux, Node.js, strong proficiency in HTML5, CSS3, SASS and Javascript, JSON, Bootstrap, Git, Github, Gitlab
                             and APIs RESTful. I'm a committed person with strong communication and collaboration skills, creative, problem-solving,
                             results-oriented, and strong visual acumen. I have the willingness and disposition to learn new technologies.

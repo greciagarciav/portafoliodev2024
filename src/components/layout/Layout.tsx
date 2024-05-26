@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { LogoContainer, Logo } from "./Layout.styled.tsx";
 
 interface Props {
   window?: () => Window;
@@ -31,8 +32,18 @@ function Layout(props: Props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+    <Box onClick={handleDrawerToggle} 
+    sx={{ 
+        textAlign: 'center', display:" flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "center"
+      }}
+    >      
+      <LogoContainer sx={{marginTop: "15px"}}>
+          <Logo src='https://media.licdn.com/dms/image/D5603AQEjqzSkpXzWYQ/profile-displayphoto-shrink_800_800/0/1712675994978?e=1718841600&v=beta&t=sdmMdvAoEx6-YcLaQj-wpLg-5bvDdZiqWjegCwAg_fk'/>
+      </LogoContainer>                        
+      <Typography variant="h6" sx={{ my: 2, fontFamily: "Source Sans Pro" }}>
         GRECIA GARCIA
       </Typography>
       <Divider />
@@ -41,7 +52,7 @@ function Layout(props: Props) {
             <Link key={item} to={item === "Home" ? ("/") : ("/" + item.toLowerCase()) }>
                 <ListItem key={item} disablePadding>
                     <ListItemButton sx={{ textAlign: 'center' }}>
-                    <ListItemText primary={item} />
+                      <ListItemText sx={{fontFamily: "Source Sans Pro"}} primary={item} />
                     </ListItemButton>
                 </ListItem>
             </Link>
@@ -54,7 +65,7 @@ function Layout(props: Props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', justifyContent: 'center' }}>
       <CssBaseline />
       <AppBar component="nav">
         <Toolbar>
@@ -67,17 +78,20 @@ function Layout(props: Props) {
           >
             <MenuIcon />
           </IconButton>
+          <LogoContainer  sx={{ marginRight: "1.5rem" , display: { xs: 'none', md: 'block' } }}>
+              <Logo src='https://media.licdn.com/dms/image/D5603AQEjqzSkpXzWYQ/profile-displayphoto-shrink_800_800/0/1712675994978?e=1718841600&v=beta&t=sdmMdvAoEx6-YcLaQj-wpLg-5bvDdZiqWjegCwAg_fk'/>
+          </LogoContainer> 
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { xs: 'none', md: 'block' } }}
           >
             GRECIA GARCIA
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
                 <Link key={item} to={ item === "Home" ? ("/") : ("/" + item.toLowerCase()) }>
-                    <Button key={item} sx={{ color: '#fff' }}>
+                    <Button key={item} sx={{ color: '#fff', fontFamily: "Source Sans Pro" }}>
                         {item}
                     </Button>
                 </Link>     
@@ -95,7 +109,7 @@ function Layout(props: Props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { sm: 'block', md: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
           }}
         >
