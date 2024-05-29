@@ -7,11 +7,22 @@ export const ProjectsContainer = styled(Box)(() => ({
     justifyContent: "center",
     alignItems: "center", 
     flexDirection: "column" as const,
-    margin: '100px 25px 0px'
+    marginTop: '100px',
+    padding: "20px",    
 }))
 
-export const ProjectsTypography = styled(Typography)(() => ({
+export const ProjectsTitle = styled(Typography)(() => ({
     fontFamily: "Source Sans Pro",
+    textAlign: "center" as const,
+    fontSize: "46px",
+     fontWeight: "bold"
+}))
+
+export const ProjectsBody = styled(Typography)(() => ({
+    fontFamily: "Source Sans Pro",
+    textAlign: "center" as const,
+    fontSize: "16px",
+    paddingBottom: "20px"
 }))
 
 export const ProjectsCardsContainer = styled(Box)(() => ({

@@ -9,8 +9,13 @@ export const HomeContainer = styled(Box)(() => ({
     alignItems: "center", 
     flexDirection: "column" as const,
     textAlign: "center" as const,
-    maxWidth: "90rem",
-    marginTop: '100px'
+    maxWidth: "80%",
+    marginTop: '100px',
+    padding: "20px",
+
+    "@media (max-width: 600px)": {
+        maxWidth: "100%"
+      }
 }))
 
 export const Title = styled(Typography)(() => ({
@@ -19,7 +24,13 @@ export const Title = styled(Typography)(() => ({
     fontSize: '4rem',
     color: colors.black,
     letterSpacing: "3px",
-    margin: "50px 0px"  
+    margin: "50px 0px",
+
+    "@media (max-width: 600px)": {
+        margin: "0px",
+        letterSpacing: "0px",
+        fontSize: '2.5rem',
+      }
 }))
 
 export const Body = styled(Typography)(() => ({
@@ -27,7 +38,13 @@ export const Body = styled(Typography)(() => ({
     fontSize: '2.2rem',
     color: colors.black,
     lineHeight: '1.6',
-    margin: "30px 50px 0px"
+    marginTop: "30px",
+    textAlign: "center" as const,
+
+    "@media (max-width: 600px)": {
+        fontSize: '2rem',
+        lineHeight: '1.2',
+      }
 }))
 
 export const ProjectsButton = styled(Button)(() => ({

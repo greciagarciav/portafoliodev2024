@@ -1,12 +1,22 @@
 import * as React from 'react';
-import { CollabsContainer, CollabsTypography, CollabsImagesContainer, CollabsImage } from './Collabs.styled.tsx';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { CollabsContainer, CollabsTitle, CollabsBody, CollabsImagesContainer, CollabsImage } from './Collabs.styled.tsx';
 
 const CollabsPortafolio = () => { 
+
+    const matches = useMediaQuery('(max-width:700px)');
+    const dynamicStyles = {
+        ...matches && {
+        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "center"}
+    }
+
     return(
         <CollabsContainer>
-            <CollabsTypography fontSize={"46px"} fontWeight={"bold"}>COLLABORATIONS</CollabsTypography>
-            <CollabsTypography fontSize={"16px"} padding={"20px"}>I'm proud to have collaborated with some awesome companies.</CollabsTypography>
-            <CollabsImagesContainer>
+            <CollabsTitle>COLLABORATIONS</CollabsTitle>
+            <CollabsBody>I'm proud to have collaborated with some awesome companies.</CollabsBody>
+            <CollabsImagesContainer sx={{ display: { xs: 'flex', sm: 'grid' }, ...dynamicStyles }}>
                 <CollabsImage src="https://www.latinka.com.pe/p/layer-view-image/v2/logo-tinka.svg"/>
                 <CollabsImage src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"/>
                 <CollabsImage src="https://www.encora.com/hubfs/Website%20v2%20Assets/Homepage/Nav/Encora%20Nav.svg"/>

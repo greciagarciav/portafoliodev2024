@@ -7,9 +7,18 @@ export const ContactContainer = styled(Box)(() => ({
     justifyContent: "center",
     alignItems: "center", 
     flexDirection: "column" as const,
-    marginTop: '100px'
+    marginTop: '100px',
+    padding: "20px"
 }))
 
-export const ContactTypography = styled(Typography)(() => ({
-    fontFamily: "Source Sans Pro"
+export const ContactTitle = styled(Typography)(() => ({
+    fontFamily: "Source Sans Pro",
+    fontSize: "46px",
+    fontWeight:"bold"
+}))
+
+export const ContactBody = styled(Typography)(() => ({
+    fontFamily: "Source Sans Pro",
+    fontSize: "16px",
+    paddingBottom: "20px"
 }))

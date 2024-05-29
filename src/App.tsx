@@ -7,7 +7,7 @@ import { AboutPortafolio } from './pages/about/About.tsx';
 import { ProjectsPortafolio } from './pages/projects/Projects.tsx';
 import { CollabsPortafolio } from './pages/collabs/Collabs.tsx';
 import { TestimonialsPortafolio } from './pages/testimonials/Testimonials.tsx';
-import { ExperiencePortafolio } from './pages/experience/Expererience.tsx';
+import { ExperiencePortafolio } from './pages/experience/Experience.tsx';
 import { ContactPortafolio } from './pages/contact/Contact.tsx';
 import { projects } from './data/projects.js';
 import { testimonials } from './data/testimonials.js';

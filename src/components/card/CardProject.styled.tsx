@@ -3,7 +3,7 @@ import { Button, Card, CardActionArea, CardContent, Typography,  Dialog, DialogC
 
 export const ProjectsCard = styled(Card)(() => ({
     width: '95%',
-    margin: "5px"
+    marginBottom: "15px"
 }))
 
 export const ProjectsCardActionArea = styled(CardActionArea)(() => ({

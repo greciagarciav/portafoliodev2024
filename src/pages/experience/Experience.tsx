@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { ExperienceContainer, ExperienceTypography } from './Experience.styled.tsx';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { ExperienceContainer, ExperienceTitle, ExperienceBody } from './Experience.styled.tsx';
 import { SkillsButton } from "../about/About.styled.tsx"
 import { Box, List, ListItem, ListItemText, Typography } from "@mui/material";
 import { Experience } from '../../models/interfaces/experience.interface.ts';
@@ -10,15 +11,20 @@ type ExperienceListProps = {
 
 const ExperiencePortafolio: React.FC<ExperienceListProps> = ({ experiences }) => {   
 
+    const matches = useMediaQuery('(max-width:700px)');
+    const dynamicStyles = {
+        ...matches && { maxWidth: "100%"}
+    }
+
     return (
         <ExperienceContainer>
-            <ExperienceTypography fontSize={"46px"} fontWeight={"bold"}>EXPERIENCE</ExperienceTypography>
-            <ExperienceTypography fontSize={"16px"} paddingBottom={"15px"}>Here you will find my relevant experience as a frontend developer.</ExperienceTypography>
+            <ExperienceTitle >EXPERIENCE</ExperienceTitle>
+            <ExperienceBody >Here you will find my relevant experience as a frontend developer.</ExperienceBody>
 
-            <List sx={{ width: '100%', maxWidth: "70%", bgcolor: 'background.paper' }}>
+            <List sx={{ width: '100%', maxWidth: "70%", bgcolor: 'background.paper', ...dynamicStyles }}>
                 
                 {experiences.map(experience=> (
-                    <ListItem key={experience.id} alignItems="flex-start" sx={{ width: '100%', padding: "20px 20px" }}>
+                    <ListItem key={experience.id} alignItems="flex-start" sx={{ width: '100%', paddingBottom: "20px" }}>
                         <Typography sx={{marginRight: "15px", width: '20%', marginTop: "7px" }}>{experience.date}</Typography>
                                         
                         <Box sx={{width: '80%'}}>

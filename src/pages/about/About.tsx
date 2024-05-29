@@ -8,10 +8,10 @@ const AboutPortafolio = () => {
         <AboutContainer>
             <FirstContainer>
                 <Title fontSize={"46px"}>ABOUT ME</Title>
-                <Body>Here you will find more information about me, what I do, and my current 
+                <Body textAlign={"center"}>Here you will find more information about me, what I do, and my current 
                     skills mostly in terms of programming and technology</Body>
             </FirstContainer>
-            <SecondContainer>
+            <SecondContainer sx={{ display: { xs: 'block', sm: 'flex' } }}>
                 <SideContainer>
                     <Title fontSize={"34px"}>Get to know me!</Title>
                     <Body>I'm a frontend developer with 4+ years of experience carrying out challenging projects under SCRUM, making use of Angular,

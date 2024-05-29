@@ -10,6 +10,17 @@ export const TestimonialsContainer = styled(Box)(() => ({
     marginTop: '100px'
 }))
 
-export const TestimonialsTypography = styled(Typography)(() => ({
+export const TestimonialsTitle = styled(Typography)(() => ({
     fontFamily: "Source Sans Pro",
+    fontSize: "46px",
+    fontWeight: "bold",
+}))
+
+export const TestimonialsBody = styled(Typography)(() => ({
+    fontFamily: "Source Sans Pro",
+    fontSize: "16px",
+    paddingBottom: "4px",
+    textAlign: "center" as const,
+    paddingLeft: "20px",
+    paddingRight: "20px"
 }))

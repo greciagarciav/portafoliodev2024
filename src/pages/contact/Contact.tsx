@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ContactContainer, ContactTypography } from './Contact.styled.tsx';
+import { ContactContainer, ContactTitle, ContactBody } from './Contact.styled.tsx';
 import { ProjectsButton } from "../about/About.styled.tsx"
 
 
@@ -10,8 +10,8 @@ const ContactPortafolio = () => {
 
     return (
         <ContactContainer sx={{textAlign: "center"}}>
-            <ContactTypography fontSize={"46px"} fontWeight={"bold"}>CONTACT</ContactTypography>
-            <ContactTypography fontSize={"16px"} paddingBottom={"15px"}>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</ContactTypography>
+            <ContactTitle>CONTACT</ContactTitle>
+            <ContactBody>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</ContactBody>
             <Box component="form"
                 sx={{
                     '& .MuiTextField-root': { m: 1 },

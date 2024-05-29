@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { TestimonialsContainer, TestimonialsTypography } from './Testimonials.styled.tsx';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { TestimonialsContainer, TestimonialsTitle, TestimonialsBody } from './Testimonials.styled.tsx';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
@@ -14,12 +15,17 @@ type TestimonialsListProps = {
 
 const TestimonialsPortafolio: React.FC<TestimonialsListProps> = ({ testimonials }) => {   
 
+    const matches = useMediaQuery('(max-width:700px)');
+    const dynamicStyles = {
+        ...matches && {maxWidth: "90%"}
+    }
+
     return (
         <TestimonialsContainer>
-            <TestimonialsTypography fontSize={"46px"} fontWeight={"bold"}>TESTIMONIALS</TestimonialsTypography>
-            <TestimonialsTypography fontSize={"16px"} paddingBottom={"15px"}>People I've worked with have said some nice things...</TestimonialsTypography>
+            <TestimonialsTitle >TESTIMONIALS</TestimonialsTitle>
+            <TestimonialsBody>People I've worked with have said some nice things...</TestimonialsBody>
 
-            <List sx={{ width: '100%', maxWidth: "55%", bgcolor: 'background.paper' }}>
+            <List sx={{ width: '100%', maxWidth: "55%", bgcolor: 'background.paper', ...dynamicStyles }}>
                 {testimonials.map((testimonial, index) => (
                     
                     <ListItem key={testimonial.id} sx={{ display: 'flex', flexDirection: index % 2 === 0 ? 'row' : 'row-reverse', alignItems: 'center', paddingBottom: "50px" }}>

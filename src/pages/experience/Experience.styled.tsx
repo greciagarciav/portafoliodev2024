@@ -7,9 +7,19 @@ export const ExperienceContainer = styled(Box)(() => ({
     justifyContent: "center",
     alignItems: "center", 
     flexDirection: "column" as const,
-    marginTop: '100px'
+    marginTop: '100px',
+    padding: "20px"
 }))
 
-export const ExperienceTypography = styled(Typography)(() => ({
+export const ExperienceTitle = styled(Typography)(() => ({
     fontFamily: "Source Sans Pro",
+    fontSize: "46px",
+    fontWeight: "bold"
+}))
+
+export const ExperienceBody = styled(Typography)(() => ({
+    fontFamily: "Source Sans Pro",
+    fontSize: "16px",
+    paddingBottom: "20px",
+    textAlign: "center" as const
 }))

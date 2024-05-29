@@ -4,7 +4,8 @@ import { colors } from "../../constants/colors.ts";
 
 export const AboutContainer = styled(Box)(() => ({
     width: '100%',
-    margin: '100px 25px 0px'
+    marginTop: '100px',
+    
 }))
 
 export const FirstContainer = styled(Box)(() => ({
@@ -13,6 +14,7 @@ export const FirstContainer = styled(Box)(() => ({
     justifyContent: "center",
     alignItems: "center", 
     flexDirection: "column" as const,
+    padding: '20px 20px'
 }))
 
 export const SecondContainer = styled(Box)(() => ({
@@ -22,6 +24,7 @@ export const SecondContainer = styled(Box)(() => ({
 
 export const SideContainer = styled(Box)(() => ({
     width: '100%',
+    padding: '20px 20px'
 }))
 
 export const Title = styled(Typography)(() => ({
@@ -38,7 +41,7 @@ export const Body = styled(Typography)(() => ({
     fontSize: '16px',
     color: colors.black,
     lineHeight: '23px',
-    padding: '20px 20px'
+    
 }))
 
 export const SkillsButton = styled(Button)(() => ({
@@ -57,6 +60,6 @@ export const ProjectsButton = styled(Button)(() => ({
     fontSize: '16px',
     color: colors.white,
     lineHeight: '18px',
-    margin: "5px",
+    marginTop: "15px",
     padding: "15px 80px",
 }))

@@ -8,12 +8,26 @@ export const CollabsContainer = styled(Box)(() => ({
     justifyContent: "space-around",
     alignItems: "center", 
     flexDirection: "column" as const,
-    marginTop: '100px'
+    marginTop: '100px',
+    padding: "20px"
 }))
 
-export const CollabsTypography = styled(Typography)(() => ({
+export const CollabsTitle = styled(Typography)(() => ({
     fontFamily: "Source Sans Pro",
-    color: colors.black
+    color: colors.black,
+    fontSize: "46px",
+    fontWeight: "bold",
+
+    "@media (max-width: 600px)": {
+        fontSize: "40px"
+    }
+}))
+
+export const CollabsBody = styled(Typography)(() => ({
+    fontFamily: "Source Sans Pro",
+    color: colors.black,
+    fontSize: "16px",
+    textAlign:"center" as const
 }))
 
 export const CollabsImagesContainer = styled(Box)(() => ({
