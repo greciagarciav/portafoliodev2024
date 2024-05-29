@@ -10,7 +10,7 @@ export const experiences = [
     {
         id: 1,
         date: 'Dec 2020 - Aug 2023',
-        role: 'Software Engineer.',
+        role: 'Software Engineer',
         company: 'Encora',
         description: 'Build, style,  dynamic, reusable, pixel-perfect components for web and emails and following a design system. Led and delivered important tactical projects with great communication, results and high quality. Improved the dark mode experience for web and email components. ',
         techStack: ["SCRUM", "HTML5", "CSS3", "SASS", "JSON", "Javascript", "React", "Redux", "Testing", "Git", "Gitlab", "Jenkins", "Artemis", "Figma", "Simondata", "Braze", "Velocity", "Jinja2", "Liquid", "responsive design", "mobile first", "cross-browser" , "cross-device compatibility"]

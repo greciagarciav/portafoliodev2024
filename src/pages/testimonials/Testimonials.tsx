@@ -33,18 +33,23 @@ const TestimonialsPortafolio: React.FC<TestimonialsListProps> = ({ testimonials 
                             <Avatar alt={testimonial.name} src={testimonial.imageUrl} sx={{ width: 100, height: 100, marginRight: "15px" }} />
                         </ListItemAvatar>
                         <ListItemText 
-                            primary={testimonial.name}
+                            primary={
+                                <Typography sx={{ fontWeight: "bold",  fontSize: "16px",  fontFamily: "Source Sans Pro"}}>{testimonial.name}</Typography>
+                            }
                             secondary={
                                 <React.Fragment>
-                                <Typography
-                                    sx={{ display: 'inline' }}
-                                    component="span"
-                                    variant="body2"
-                                    color="text.primary"
-                                >
-                                    {testimonial.role}
-                                </Typography>
-                                {testimonial.description}
+                                    <Typography
+                                        sx={{ display: 'inline', fontSize: "16px" , fontFamily: "Source Sans Pro" }}
+                                        component="span"
+                                        variant="body2"
+                                        color="text.primary"
+                                    >
+                                        {testimonial.role}
+                                    </Typography>
+                                    <Typography component="span" sx={{ fontSize: "16px", fontFamily: "Source Sans Pro" }} >
+                                        {testimonial.description}
+                                    </Typography>
+                                    
                                 </React.Fragment>
                             }
                         />                            

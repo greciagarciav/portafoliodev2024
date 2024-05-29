@@ -28,11 +28,10 @@ const CardProject: React.FC<CardProjectProps> = ({ project }) => {
         <ProjectsCard variant="outlined" onClick={handleClickOpen}>
             <ProjectsCardActionArea>
                 <ProjectsCardMedia src={project.imageUrl}/>         
-                <ProjectsCardContent>
-                    <ProjectsCardTypography gutterBottom fontSize={"20px"}>
-                    {project.name}
-                    </ProjectsCardTypography>
-                    
+                <ProjectsCardContent sx={{backgroundColor: "#f1f2f2"}}>
+                    <ProjectsCardTypography gutterBottom fontSize={"20px"} fontWeight={"bold"}>
+                      {project.name}
+                    </ProjectsCardTypography>                    
                 </ProjectsCardContent>
             </ProjectsCardActionArea>
           </ProjectsCard>

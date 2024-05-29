@@ -25,15 +25,17 @@ const ExperiencePortafolio: React.FC<ExperienceListProps> = ({ experiences }) =>
                 
                 {experiences.map(experience=> (
                     <ListItem key={experience.id} alignItems="flex-start" sx={{ width: '100%', paddingBottom: "20px" }}>
-                        <Typography sx={{marginRight: "15px", width: '20%', marginTop: "7px" }}>{experience.date}</Typography>
+                        <Typography sx={{marginRight: "15px", width: '20%', marginTop: "7px", fontSize: "16px" , fontFamily: "Source Sans Pro" }}>{experience.date}</Typography>
                                         
                         <Box sx={{width: '80%'}}>
                             <ListItemText 
-                                primary={experience.role + " " + experience.company}
+                                primary={ 
+                                    <Typography sx={{ fontWeight: "bold", fontSize: "16px" , fontFamily: "Source Sans Pro" }}>{experience.role + ". " + experience.company}</Typography>                                    
+                                }
                                 secondary={
-                                    <React.Fragment>
+                                    <Typography sx={{ fontSize: "16px" , fontFamily: "Source Sans Pro" }}>
                                         {experience.description}
-                                    </React.Fragment>                                    
+                                    </Typography>                                    
                                 }
                                 
                             />

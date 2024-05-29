@@ -33,19 +33,22 @@ function Layout(props: Props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} 
-    sx={{ 
-        textAlign: 'center', display:" flex",
+      sx={{ 
+        textAlign: 'center', 
+        display:" flex",
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center"
       }}
-    >      
-      <LogoContainer sx={{marginTop: "15px"}}>
-          <Logo src='https://media.licdn.com/dms/image/D5603AQEjqzSkpXzWYQ/profile-displayphoto-shrink_800_800/0/1712675994978?e=1718841600&v=beta&t=sdmMdvAoEx6-YcLaQj-wpLg-5bvDdZiqWjegCwAg_fk'/>
-      </LogoContainer>                        
-      <Typography variant="h6" sx={{ my: 2, fontFamily: "Source Sans Pro" }}>
-        GRECIA GARCIA
-      </Typography>
+    >
+      <Link to={"/"} style={{ textDecoration: 'none', display: 'flex', flexDirection: "column" , alignItems: 'center' }}>
+        <LogoContainer sx={{marginTop: "15px"}}>
+            <Logo src='https://media.licdn.com/dms/image/D5603AQEjqzSkpXzWYQ/profile-displayphoto-shrink_800_800/0/1712675994978?e=1718841600&v=beta&t=sdmMdvAoEx6-YcLaQj-wpLg-5bvDdZiqWjegCwAg_fk'/>
+        </LogoContainer>                        
+        <Typography variant="h6" sx={{ my: 2, fontFamily: "Source Sans Pro", color: "black" }}>
+          GRECIA GARCIA
+        </Typography>
+      </Link>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -68,7 +71,7 @@ function Layout(props: Props) {
     <Box sx={{ display: 'flex', justifyContent: 'center' }}>
       <CssBaseline />
       <AppBar component="nav">
-        <Toolbar>
+        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -78,16 +81,18 @@ function Layout(props: Props) {
           >
             <MenuIcon />
           </IconButton>
-          <LogoContainer  sx={{ marginRight: "1.5rem" , display: { xs: 'none', md: 'block' } }}>
-              <Logo src='https://media.licdn.com/dms/image/D5603AQEjqzSkpXzWYQ/profile-displayphoto-shrink_800_800/0/1712675994978?e=1718841600&v=beta&t=sdmMdvAoEx6-YcLaQj-wpLg-5bvDdZiqWjegCwAg_fk'/>
-          </LogoContainer> 
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', md: 'block' } }}
-          >
-            GRECIA GARCIA
-          </Typography>
+          <Link to={"/"} style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+            <LogoContainer  sx={{ marginRight: "10px" , display: { xs: 'none', md: 'block' } }}>
+                <Logo src='https://media.licdn.com/dms/image/D5603AQEjqzSkpXzWYQ/profile-displayphoto-shrink_800_800/0/1712675994978?e=1718841600&v=beta&t=sdmMdvAoEx6-YcLaQj-wpLg-5bvDdZiqWjegCwAg_fk'/>
+            </LogoContainer> 
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{ flexGrow: 1, color: "white", display: { xs: 'none', md: 'block', fontFamily: "Source Sans Pro" } }}
+            >
+              GRECIA GARCIA
+            </Typography>
+          </Link>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
                 <Link key={item} to={ item === "Home" ? ("/") : ("/" + item.toLowerCase()) }>

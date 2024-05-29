@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { Box, Typography } from "@mui/material";
 
 export const TestimonialsContainer = styled(Box)(() => ({
+    fontFamily: "Source Sans Pro",
     width: '100%',
     display: "flex",
     justifyContent: "center",
