@@ -14,11 +14,10 @@ const AboutPortafolio = () => {
             <SecondContainer sx={{ display: { xs: 'block', sm: 'flex' } }}>
                 <SideContainer>
                     <Title fontSize={"34px"}>Get to know me!</Title>
-                    <Body>I'm a frontend developer with 4+ years of experience carrying out challenging projects under SCRUM, making use of Angular,
-                            React.js/Redux, Node.js, strong proficiency in HTML5, CSS3, SASS and Javascript, JSON, Bootstrap, Git, Github, Gitlab
-                            and APIs RESTful. I'm a committed person with strong communication and collaboration skills, creative, problem-solving,
-                            results-oriented, and strong visual acumen. I have the willingness and disposition to learn new technologies.
-                            I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</Body>
+                    <Body>I am a seasoned frontend developer with over 4 years of experience, I've successfully tackled challenging projects within SCRUM environments, leveraging my expertise in React.js. My proficiency extends across essential web technologies such as HTML5, CSS3, SASS, and JavaScript, allowing me to craft dynamic and visually appealing interfaces.<br></br><br></br>
+                        With a strong foundation in version control systems like Git, and experience collaborating on platforms like Github and Gitlab, I prioritize effective communication and teamwork to drive project success. I thrive on finding creative solutions to complex problems, always keeping the end-user experience in mind.<br></br><br></br>
+                        My results-oriented approach, coupled with a keen eye for design, ensures that the products I develop not only meet technical requirements but also visual, accesibility and usability expectations. I'm also committed to continuous learning and improvement.
+                    </Body>
                             <Link to="/contact">
                                 <ProjectsButton variant="contained">CONTACT</ProjectsButton>
                             </Link>                    
@@ -71,6 +70,9 @@ const AboutPortafolio = () => {
                         Time management
                     </SkillsButton>
                     <SkillsButton variant="contained" disabled>
+                        Empathy
+                    </SkillsButton>
+                    <SkillsButton variant="contained" disabled>
                         Adaptability
                     </SkillsButton>
                     <SkillsButton variant="contained" disabled>
@@ -85,11 +87,6 @@ const AboutPortafolio = () => {
                     <SkillsButton variant="contained" disabled>
                         Communication
                     </SkillsButton>
-                    <SkillsButton variant="contained" disabled>
-                        Empathy
-                    </SkillsButton>
-                    
-                    
                 </SideContainer>
             </SecondContainer>
           

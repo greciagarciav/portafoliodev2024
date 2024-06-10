@@ -32,10 +32,14 @@ export const ProjectsCardDialogContent = styled(DialogContent)(() => ({
 
 export const ProjectsCardDialogTitle = styled(DialogTitle)(() => ({
     fontFamily: "Source Sans Pro",
+    color: "darkslategray",
+    fontWeight: "bold",
+    backgroundColor: "lightgray"
 }))
 
 export const ProjectsCardDialogContentText = styled(DialogContentText)(() => ({
     fontFamily: "Source Sans Pro",
+    paddingTop: "20px"
 }))
 
 export const ProjectsCardDialogActions = styled(DialogActions)(() => ({

@@ -1,9 +1,11 @@
 import * as React from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { ExperienceContainer, ExperienceTitle, ExperienceBody } from './Experience.styled.tsx';
 import { SkillsButton } from "../about/About.styled.tsx"
-import { Box, List, ListItem, ListItemText, Typography } from "@mui/material";
+import { Box, Button, List, ListItem, ListItemText ,Typography } from "@mui/material";
 import { Experience } from '../../models/interfaces/experience.interface.ts';
+
 
 type ExperienceListProps = {
     experiences: Experience[]
@@ -50,6 +52,10 @@ const ExperiencePortafolio: React.FC<ExperienceListProps> = ({ experiences }) =>
                 ))}                
                 
             </List>
+            <Button variant="contained" sx={{fontWeight:"bolder", fontSize: "12px", fontFamily: "Source Sans Pro", width: "50%", "@media (max-width: 600px)": { width: "80%"}}} href='https://raw.githubusercontent.com/greciagarciav/portafolio-greciagarciav/master/assets/resume-grecia-garcia.pdf' target="_blank" rel="noreferrer noopener">
+                View full Resume
+                <OpenInNewIcon />
+            </Button>
         </ExperienceContainer>
       );
 } 

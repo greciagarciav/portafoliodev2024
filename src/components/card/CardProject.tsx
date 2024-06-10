@@ -1,9 +1,7 @@
 import  React from 'react';
-import { ProjectsCard, ProjectsCardActionArea, ProjectsCardContent, ProjectsCardMedia, ProjectsCardTypography,  ProjectsCardDialog, ProjectsCardDialogContent, ProjectsCardDialogTitle, ProjectsCardDialogContentText, ProjectsCardDialogActions, ProjectsCardDialogButton } from './CardProject.styled.tsx';
-import { useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import { Button } from "@mui/material";
+import { ProjectsCard, ProjectsCardActionArea, ProjectsCardContent, ProjectsCardMedia, ProjectsCardTypography,  ProjectsCardDialog, ProjectsCardDialogContent, ProjectsCardDialogTitle, ProjectsCardDialogContentText, ProjectsCardDialogActions } from './CardProject.styled.tsx';
 import { Project } from "../../models/interfaces/project.interface"
-
 
 type CardProjectProps = {
   project: Project;
@@ -12,8 +10,6 @@ type CardProjectProps = {
 const CardProject: React.FC<CardProjectProps> = ({ project }) => {
 
     const [open, setOpen] = React.useState(false);
-    const theme = useTheme();
-    const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
   
     const handleClickOpen = () => {
       setOpen(true);
@@ -24,42 +20,41 @@ const CardProject: React.FC<CardProjectProps> = ({ project }) => {
     };
 
     return (
-    <React.Fragment>
-        <ProjectsCard variant="outlined" onClick={handleClickOpen}>
-            <ProjectsCardActionArea>
-                <ProjectsCardMedia src={project.imageUrl}/>         
-                <ProjectsCardContent sx={{backgroundColor: "#f1f2f2"}}>
-                    <ProjectsCardTypography gutterBottom fontSize={"20px"} fontWeight={"bold"}>
-                      {project.name}
-                    </ProjectsCardTypography>                    
-                </ProjectsCardContent>
-            </ProjectsCardActionArea>
-          </ProjectsCard>
-          <ProjectsCardDialog
-            fullScreen={fullScreen}
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="responsive-dialog-title"
-          >
-            <ProjectsCardDialogTitle id="responsive-dialog-title">
-              {project.name}
-            </ProjectsCardDialogTitle>
-            <ProjectsCardDialogContent>
-              <ProjectsCardDialogContentText>
-                {project.description}
-              </ProjectsCardDialogContentText>
-            </ProjectsCardDialogContent>
-            <ProjectsCardDialogActions>
-              <ProjectsCardDialogButton autoFocus href={project.repoUrl}>
-                Documentation
-              </ProjectsCardDialogButton>
-              <ProjectsCardDialogButton autoFocus href={project.demoUrl}>
-                Demo
-              </ProjectsCardDialogButton>
-            </ProjectsCardDialogActions>
-          </ProjectsCardDialog>
-    </React.Fragment>
-
+      <React.Fragment>
+          <ProjectsCard variant="outlined" onClick={handleClickOpen}>
+              <ProjectsCardActionArea>
+                  <ProjectsCardMedia src={project.imageUrl}/>         
+                  <ProjectsCardContent sx={{backgroundColor: "#f1f2f2"}}>
+                      <ProjectsCardTypography gutterBottom fontSize={"20px"} fontWeight={"bold"}>
+                        {project.name}
+                      </ProjectsCardTypography>                    
+                  </ProjectsCardContent>
+              </ProjectsCardActionArea>
+            </ProjectsCard>
+            <ProjectsCardDialog
+              fullScreen={false}
+              open={open}
+              onClose={handleClose}
+              aria-labelledby="responsive-dialog-title"
+            >
+              <ProjectsCardDialogTitle id="responsive-dialog-title">
+                {project.name}
+              </ProjectsCardDialogTitle>
+              <ProjectsCardDialogContent>
+                <ProjectsCardDialogContentText>
+                  {project.description}
+                </ProjectsCardDialogContentText>
+              </ProjectsCardDialogContent>
+              <ProjectsCardDialogActions>
+                <Button autoFocus href={project.repoUrl} target="_blank"> 
+                  Documentation
+                </Button>
+                <Button autoFocus href={project.demoUrl} target="_blank">
+                  Demo
+                </Button>
+              </ProjectsCardDialogActions>
+            </ProjectsCardDialog>
+      </React.Fragment>
     )
 }
 

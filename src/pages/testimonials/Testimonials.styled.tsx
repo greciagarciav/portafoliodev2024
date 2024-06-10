@@ -8,7 +8,8 @@ export const TestimonialsContainer = styled(Box)(() => ({
     justifyContent: "center",
     alignItems: "center", 
     flexDirection: "column" as const,
-    marginTop: '100px'
+    marginTop: '70px',
+    padding: "20px",
 }))
 
 export const TestimonialsTitle = styled(Typography)(() => ({

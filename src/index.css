@@ -31,3 +31,15 @@ code {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.87);
 }
+
+.css-1dl1zbt-MuiListItem-root, 
+.css-1pdsa18-MuiListItem-root,
+.css-1hlnebm-MuiListItem-root {
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}
+
+.css-gzc95j-MuiTypography-root {
+  font-size: 16px!important;
+  color: darkslategray;
+}

@@ -4,7 +4,7 @@ import { colors } from "../../constants/colors.ts";
 
 export const AboutContainer = styled(Box)(() => ({
     width: '100%',
-    marginTop: '100px',
+    marginTop: '70px',
     
 }))
 
@@ -14,7 +14,7 @@ export const FirstContainer = styled(Box)(() => ({
     justifyContent: "center",
     alignItems: "center", 
     flexDirection: "column" as const,
-    padding: '20px 20px'
+    padding: '20px 20px 0px'
 }))
 
 export const SecondContainer = styled(Box)(() => ({
@@ -47,8 +47,8 @@ export const Body = styled(Typography)(() => ({
 export const SkillsButton = styled(Button)(() => ({
     fontFamily: "Source Sans Pro",
     fontWeight: 'bold',
-    fontSize: '13.5px',
-    color: colors.white,
+    fontSize: '12px',
+    color: "darkslategray!important",
     lineHeight: '18px',
     margin: "5px",
     padding: '15px 15px'
