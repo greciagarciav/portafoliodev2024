@@ -15,7 +15,7 @@ import { experiences } from './data/experience.js';
 
 const App = () => (
   <AppContainer>
-    <BrowserRouter>
+    <BrowserRouter basename="/portafoliodev2024">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePortafolio />} />
