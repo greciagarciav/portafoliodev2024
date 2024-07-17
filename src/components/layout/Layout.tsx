@@ -43,7 +43,7 @@ function Layout(props: Props) {
     >
       <Link to={"/"} style={{ textDecoration: 'none', display: 'flex', flexDirection: "column" , alignItems: 'center' }}>
         <LogoContainer sx={{marginTop: "15px"}}>
-            <Logo src='https://media.licdn.com/dms/image/D5603AQEjqzSkpXzWYQ/profile-displayphoto-shrink_800_800/0/1712675994978?e=1718841600&v=beta&t=sdmMdvAoEx6-YcLaQj-wpLg-5bvDdZiqWjegCwAg_fk'/>
+            <Logo src='https://raw.githubusercontent.com/greciagarciav/portafolio-greciagarciav/master/assets/gre.jpg'/>
         </LogoContainer>                        
         <Typography variant="h6" sx={{ my: 2, fontFamily: "Source Sans Pro", color: "black" }}>
           GRECIA GARCIA
@@ -83,7 +83,7 @@ function Layout(props: Props) {
           </IconButton>
           <Link to={"/"} style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
             <LogoContainer  sx={{ marginRight: "10px" , display: { xs: 'none', md: 'block' } }}>
-                <Logo src='https://media.licdn.com/dms/image/D5603AQEjqzSkpXzWYQ/profile-displayphoto-shrink_800_800/0/1712675994978?e=1718841600&v=beta&t=sdmMdvAoEx6-YcLaQj-wpLg-5bvDdZiqWjegCwAg_fk'/>
+                <Logo src='https://raw.githubusercontent.com/greciagarciav/portafolio-greciagarciav/master/assets/gre.jpg'/>
             </LogoContainer> 
             <Typography
               variant="h6"

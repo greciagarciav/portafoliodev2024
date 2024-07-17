@@ -2,6 +2,7 @@ import  React from 'react';
 import { Button } from "@mui/material";
 import { ProjectsCard, ProjectsCardActionArea, ProjectsCardContent, ProjectsCardMedia, ProjectsCardTypography,  ProjectsCardDialog, ProjectsCardDialogContent, ProjectsCardDialogTitle, ProjectsCardDialogContentText, ProjectsCardDialogActions } from './CardProject.styled.tsx';
 import { Project } from "../../models/interfaces/project.interface"
+import { SkillsButton } from '../../pages/about/About.styled.tsx';
 
 type CardProjectProps = {
   project: Project;
@@ -42,7 +43,14 @@ const CardProject: React.FC<CardProjectProps> = ({ project }) => {
               </ProjectsCardDialogTitle>
               <ProjectsCardDialogContent>
                 <ProjectsCardDialogContentText>
-                  {project.description}
+                  {project.description}            
+                </ProjectsCardDialogContentText>
+                <ProjectsCardDialogContentText>         
+                  {project.techStack.map(skill=> (
+                                <SkillsButton key={project.id + skill} variant="contained" disabled>
+                                    {skill}
+                                </SkillsButton>
+                            ))}
                 </ProjectsCardDialogContentText>
               </ProjectsCardDialogContent>
               <ProjectsCardDialogActions>
