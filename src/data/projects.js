@@ -17,15 +17,15 @@ export const projects = [
         demoUrl: 'https://greciagarciav.github.io/latinka/src/index.html',
         techStack: ['Javascript', 'SCSS', "HTML", "Bootstrap"]
     }, 
-    {
-        id: 2,
-        name: 'Battle of monsters',
-        description: 'The app is a battle of monsters, where we have many different monsters with multiple stats like attack and defense, and they can fight each other.',
-        imageUrl: 'https://raw.githubusercontent.com/greciagarciav/portafolio-greciagarciav/master/assets/2.png',
-        repoUrl: 'https://github.com/greciagarciav/monsters-battle',
-        demoUrl: 'https://github.com/greciagarciav/monsters-battle',
-        techStack: ['ReactJS', 'MaterialUI', "API"]
-    }, 
+   // {
+   //     id: 2,
+   //     name: 'Battle of monsters',
+   //     description: 'The app is a battle of monsters, where we have many different monsters with multiple stats like attack and defense, and they can fight each other.',
+   //     imageUrl: 'https://raw.githubusercontent.com/greciagarciav/portafolio-greciagarciav/master/assets/2.png',
+   //     repoUrl: 'https://github.com/greciagarciav/monsters-battle',
+   //     demoUrl: 'https://github.com/greciagarciav/monsters-battle',
+   //     techStack: ['ReactJS', 'MaterialUI', "API"]
+   // }, 
     {
         id: 3,
         name: 'Burguer Queen',
